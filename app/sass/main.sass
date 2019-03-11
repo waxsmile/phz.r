@@ -8,6 +8,8 @@
 ::selection
 	background-color: $accent
 	color: #fff
+html
+	overflow-x: hidden
 
 body
 	font-size: 16px
@@ -17,6 +19,8 @@ body
 	font-family: $default-font
 	overflow-x: hidden
 	color: $text
+	font-family: tt-norms
+	font-weight: 500  
 	input, textarea
 		border: #666 1px solid
 		outline: none
@@ -24,6 +28,45 @@ body
 			border-color: red
 		&:required:valid
 			border-color: green
+
+h1
+	font-size: 42px
+h2
+	font-size: 36px
+h3
+	font-size: 32px
+h4
+	font-size: 26px
+h5
+	font-size: 22px
+h6
+	font-size: 18px
+			
+button
+	border: none
+	padding: 12px 35px
+	box-shadow: 0 4px 6px rgba(255,255,255,.4)
+	border-radius: 5px
+	white-space: nowrap
+	transition: all ease 0.3s
+	cursor: pointer 
+	color: #333
+	font-size: 18px
+	font-weight: 500
+	outline: none 
+	a
+		outline: none
+		&:hover
+			text-decoration: none
+			color: #333
+	&:hover
+		box-shadow: 0 -2px 50px rgba(255,255,255,.6)
+
+.relative
+	position: relative
+	
+.absolute
+	position: absolute
 
 .img-responsive
 	display: block
@@ -38,6 +81,203 @@ body
 b, strong
 	font-weight: bold
 
+.main-header
+	background-image: url(/img/printshop_floor.png)
+	min-height: 800px
+	position: relative
+	background-repeat: no-repeat
+	background-size: cover
+	&:before
+		background: linear-gradient(101.78deg, #000F96 4%, rgba(49, 70, 255, 0.88) 100%)
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+	.top-line
+		padding-top: 50px
+		line-height: 40px
+		.main-mnu
+			ul>li
+				display: inline-block
+				margin-right: 50px
+				a
+					color: #FFF
+		.header-phone-wraper
+			margin-top: -20px
+			span
+				display: block
+				font-size: 20px
+				color: #FFF
+				white-space: nowrap 
 
+.header-content
+	padding-top: 120px
+	color: #FFF
+	.header-text-wraper
+		padding: 40px 40px
+		border-top: 20px solid #FF4796
+		border-left: 20px solid #FF4796
+		border-bottom: 20px solid #FF4796
+		position: relative
+		left: -50px
+		&:before
+			content: ""
+			display: block
+			position: absolute
+			top: 0%
+			width: 20px
+			height: 80px
+			border-right: 20px solid #ff4796
+			right: 0
+		&:after
+			content: ""
+			display: block
+			position: absolute
+			bottom: 0%
+			width: 20px
+			height: 80px
+			border-right: 20px solid #ff4796
+			right: 0
+		h1
+			font-size: 40px 
+			padding: 20px 0 
+	.header-img-wraper
+		position: relative
+		z-index: 1
+		&:before
+			content: ''
+			width: 600px
+			height: 600px
+			background-image: url(/img/cube.svg) 
+			background-repeat: no-repeat
+			background-position: center top
+			position: absolute
+			z-index: -1
+	.button-wraper
+		position: relative
+		top: 30px
+		
+.sect-1
+	padding-top: 120px
+	position: relative
+	&:before
+		content: '80 лет'
+		position: absolute
+		font-size: 570px
+		color: #F9F9F9
+		font-weight: 700 
+		bottom: 50px
+		z-index: -1 
+	.sect-1-text
+		.sect-header
+			h2
+				&:after
+					position: relative
+					content: ''
+					height: 4px
+					background: linear-gradient(101.78deg,#3B49F6 4%,#FE4797 100%)
+					width: 68px
+					display: block
+					bottom: 0px
+					left: 35px
+					border-radius:  30px
+					transform: translate(-50%, 0)
+	.image-wraper-sect-1
+		text-align: center
+		position: relative
+		bottom: 170px
+		&:after
+			content: ''
+			background-image: url(/img/bg-zh.svg)
+			background-repeat: no-repeat
+			background-position: bottom
+			width: 466px
+			height: 500px
+			position: absolute
+			left: -68px
+			top: 295px
+			z-index: -1
+		&:before
+			content: ''
+			background-image: url(/img/round.svg)
+			background-repeat: no-repeat
+			background-position: bottom
+			width: 300px
+			height: 300px
+			position: absolute
+			left: 420px
+			top: -115px
+			z-index: -1
+
+.sect-2
+	padding-top: 70px
+	.sect-2-header
+		h2
+			position: relative
+			&:after
+				position: relative
+				content: ''
+				height: 4px
+				background: linear-gradient(101.78deg,#3B49F6 4%,#FE4797 100%)
+				width: 68px
+				display: block
+				bottom: 0px
+				left: 35px
+				border-radius:  30px
+				transform: translate(-50%, 0)
+			&:before
+				content: 'Наша продукция'
+				position: absolute
+				font-size: 125px
+				color: #f9f9f9
+				font-weight: 700
+				bottom: -65px
+				z-index: -1
+				left: -60px
+	.product-wraper
+		transition: all ease 0.9s
+		padding-top: 100px
+		.product-href
+			transition: all ease 0.9s
+			color: #333
+			.product-item
+				min-height: 300px
+				background-repeat: no-repeat
+				transition: all ease 0.9s
+				&:hover
+					&:after
+						content: ''
+						padding: 160px 120px
+						border: 15px solid #3949f8
+						position: relative
+						left: 66px
+						z-index: -1
+						bottom: -110px
+						border-radius: 5px 
+
+
+
+.cube-1
+	border: 40px solid #3949f8
+	background-color: transparent
+	filter: drop-shadow(0 0 10px #3949f8)
+	top: 650px
+	width: 265px
+	height: 265px
+	left: -121px
+	border-radius: 5px
+	transform: translateY(-180px) rotate(31deg)
+.cube-2
+	border: 40px solid #3949f8
+	background-color: transparent
+	filter: drop-shadow(0 0 10px #3949f8)
+	left: 95%
+	top: 300px
+	width: 165px
+	height: 165px
+	border-radius: 5px
+	transform: translateY(-180px) rotate(45deg)
 
 @import "media" // Always at the end
