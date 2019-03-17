@@ -31,6 +31,134 @@ body
 		&:required:valid
 			border-color: green
 
+.line
+	position: absolute
+	right: 50%
+	height: 100%
+	width: 1px
+	background-color: rgba(206, 206, 206, 0.3)
+	z-index: -1
+	&:before
+		content: ''
+		position: absolute
+		right: 380px
+		height: 100%
+		width: 1px
+		background-color: rgba(206, 206, 206, 0.3)
+		z-index: -1
+	&:after
+		content: ''
+		position: absolute
+		right: -380px
+		height: 100%
+		width: 1px
+		background-color: rgba(206, 206, 206, 0.3)
+		z-index: -1
+
+// .line-2
+// 	position: absolute
+// 	right: 50%
+// 	height: 30px
+// 	width: 3px
+// 	background-color: rgba(206, 206, 206, 0.6)
+// 	z-index: 1
+// 	top: 20px
+// 	&:before
+// 		content: ''
+// 		position: absolute
+// 		right: 380px
+// 		height: 100%
+// 		width: 3px
+// 		background-color: rgba(206, 206, 206, 0.6)
+// 		z-index: 1
+// 		top: 150px
+// 	&:after
+// 		content: ''
+// 		position: absolute
+// 		right: -380px
+// 		height: 100%
+// 		width: 3px
+// 		background-color: rgba(206, 206, 206, 0.6)
+// 		z-index: 1
+// 		top: 650px
+
+.line-3
+	position: absolute
+	right: 50%
+	height: 30px
+	width: 3px
+	background-color: rgba(206, 206, 206, 0.6)
+	z-index: 1
+	top: 1500px
+	&:before
+		content: ''
+		position: absolute
+		right: 380px
+		height: 100%
+		width: 3px
+		background-color: rgba(206, 206, 206, 0.6)
+		z-index: 1
+		top: -700px
+		repeat-y: 300px
+	&:after
+		content: ''
+		position: absolute
+		right: -380px
+		height: 100%
+		width: 3px
+		background-color: rgba(206, 206, 206, 0.6)
+		z-index: 1
+		top: 1400px
+
+.line-4
+	position: absolute
+	right: 50%
+	height: 30px
+	width: 3px
+	background-color: rgba(206, 206, 206, 0.6)
+	z-index: 1
+	top: 1500px
+	&:before
+		content: ''
+		position: absolute
+		right: 380px
+		height: 100%
+		width: 3px
+		background-color: rgba(206, 206, 206, 0.6)
+		z-index: 1
+		top: -700px
+		repeat-y: 300px
+	&:after
+		content: ''
+		position: absolute
+		right: -380px
+		height: 100%
+		width: 3px
+		background-color: rgba(206, 206, 206, 0.6)
+		z-index: 1
+		top: 1400px
+		
+.line-header
+	position: absolute
+	right: 50%
+	height: 100%
+	width: 1px
+	background-color: rgba(206, 206, 206, 0.3)
+	&:before
+		content: ''
+		position: absolute
+		right: 380px
+		height: 100%
+		width: 1px
+		background-color: rgba(206, 206, 206, 0.3)
+	&:after
+		content: ''
+		position: absolute
+		right: -380px
+		height: 100%
+		width: 1px
+		background-color: rgba(206, 206, 206, 0.3)
+
 h1
 	font-size: 42px
 h2
@@ -254,6 +382,7 @@ b, strong
 					min-height: 300px
 					background-repeat: no-repeat
 					margin-bottom: 60px
+					max-width: 300px 
 					&:before
 						content: ''
 						padding: 160px 120px
@@ -365,7 +494,7 @@ b, strong
 	.second-rect
 		width: 0
 		height: 0
-		border-width: 30px 30px 400px
+		border-width: 30px 30px 300px
 		border-style: solid
 		border-color: #fff0 #ffffff #fffffffc
 		margin: 0 auto
@@ -377,7 +506,7 @@ b, strong
 		&:after
 			content: ""
 			width: 130px
-			height: 430px
+			height: 330px
 			background: #fff
 			position: absolute
 			top: -30px
@@ -386,7 +515,7 @@ b, strong
 		&:before
 			content: ""
 			width: 130px
-			height: 430px
+			height: 330px
 			background: #fff
 			position: absolute
 			top: -30px
