@@ -55,33 +55,6 @@ body
 		background-color: rgba(206, 206, 206, 0.3)
 		z-index: -1
 
-// .line-2
-// 	position: absolute
-// 	right: 50%
-// 	height: 30px
-// 	width: 3px
-// 	background-color: rgba(206, 206, 206, 0.6)
-// 	z-index: 1
-// 	top: 20px
-// 	&:before
-// 		content: ''
-// 		position: absolute
-// 		right: 380px
-// 		height: 100%
-// 		width: 3px
-// 		background-color: rgba(206, 206, 206, 0.6)
-// 		z-index: 1
-// 		top: 150px
-// 	&:after
-// 		content: ''
-// 		position: absolute
-// 		right: -380px
-// 		height: 100%
-// 		width: 3px
-// 		background-color: rgba(206, 206, 206, 0.6)
-// 		z-index: 1
-// 		top: 650px
-
 .line-3
 	position: absolute
 	right: 50%
@@ -217,6 +190,7 @@ b, strong
 	position: relative
 	background-repeat: no-repeat
 	background-size: cover
+	z-index: 2
 	&:before
 		background: linear-gradient(101.78deg, #000F96 4%, rgba(49, 70, 255, 0.88) 100%)
 		content: ''
@@ -225,6 +199,19 @@ b, strong
 		left: 0
 		right: 0
 		bottom: 0
+		z-index: -1
+	&:after
+		background: url(/img/bg-head.svg)
+		background-repeat: no-repeat
+		content: ''
+		position: absolute
+		top: 200px
+		left: 0
+		right: 0
+		bottom: 0	
+		z-index: -1
+		width: 500px
+		height: 500px
 	.top-line
 		padding-top: 50px
 		line-height: 40px
@@ -318,6 +305,7 @@ b, strong
 		text-align: center
 		position: relative
 		bottom: 170px
+		z-index: 2
 		&:after
 			content: ''
 			background-image: url(/img/bg-zh.svg)
@@ -338,7 +326,7 @@ b, strong
 			height: 300px
 			position: absolute
 			left: 420px
-			top: -115px
+			top: -25px
 			z-index: -1
 
 .sect-2
@@ -383,6 +371,7 @@ b, strong
 					background-repeat: no-repeat
 					margin-bottom: 60px
 					max-width: 300px 
+					background-position: center
 					&:before
 						content: ''
 						padding: 160px 120px
@@ -410,6 +399,9 @@ b, strong
 .sect-3
 	padding-top: 200px
 	padding-bottom: 50px
+	background-image: url(/img/bg-s-3-3.svg)
+	background-repeat: no-repeat
+	background-position: center 80%
 	.sect-3-header
 		h2
 			position: relative
@@ -469,10 +461,12 @@ b, strong
 			font-size: 17px
 		img
 			position: absolute
-			top: -40px
+			top: -35px
 			font-size: 17px
 			z-index: 1
 			left: 85px
+			width: 50px
+			height: auto
 	.rhombus
 		width: 0
 		height: 0
@@ -494,7 +488,7 @@ b, strong
 	.second-rect
 		width: 0
 		height: 0
-		border-width: 30px 30px 300px
+		border-width: 30px 30px 320px
 		border-style: solid
 		border-color: #fff0 #ffffff #fffffffc
 		margin: 0 auto
@@ -506,7 +500,7 @@ b, strong
 		&:after
 			content: ""
 			width: 130px
-			height: 330px
+			height: 350px
 			background: #fff
 			position: absolute
 			top: -30px
@@ -515,7 +509,7 @@ b, strong
 		&:before
 			content: ""
 			width: 130px
-			height: 330px
+			height: 350px
 			background: #fff
 			position: absolute
 			top: -30px
@@ -526,11 +520,82 @@ b, strong
 			position: absolute
 			right: -165px
 			width: 290px
+			margin-top: 15px
 			ul
 				padding: 0
 				li
 					padding-bottom: 15px
 					font-size: 15px
+					
+
+
+
+.sect-4
+	padding-top: 200px
+	padding-bottom: 50px
+	.sect-4-header
+		h2
+			position: relative
+			&:after
+				position: relative
+				content: ''
+				height: 4px
+				background: linear-gradient(101.78deg,#3B49F6 4%,#FE4797 100%)
+				width: 68px
+				display: block
+				bottom: 0px
+				left: 35px
+				border-radius:  30px
+				transform: translate(-50%, 0)
+			&:before
+				content: 'Нам доверяют'
+				position: absolute
+				font-size: 125px
+				color: #f9f9f9
+				font-weight: 700
+				bottom: -65px
+				z-index: -1
+				left: -60px
+	.img-partners-wraper
+		margin-top: 80px
+		text-align: center
+		padding: 10px 0
+
+
+.contacts
+	padding-top: 130px
+	padding-bottom: 50px
+	.form-wraper
+		height: 100%
+		filter: drop-shadow(0 0 10px #bebebe)
+		background: #fff
+		border-radius: 0 5px 5px 0
+		form
+			padding-top: 50px
+			h4
+				font-size: 20px
+				margin-left: 70px
+			h3
+				font-size: 26px
+				margin-left: 70px
+			input
+				display: block
+				max-width: 370px 
+				padding: 5px 90px
+				margin: 0 auto
+				margin-bottom: 5px 
+			textarea
+				display: block
+				max-width: 370px 
+				padding: 5px 90px
+				margin: 0 auto
+				margin-bottom: 5px 
+				height: 140px
+			.button-wraper-form
+				padding-top: 30px
+				text-align: center
+		
+
 
 .cube-1
 	border: 40px solid #3949f8
@@ -562,6 +627,24 @@ b, strong
 	height: 305px
 	border-radius: 5px
 	transform: translateY(-180px) rotate(45deg)
+	
+
+.list-style-dev
+	list-style-type: none 
+	li
+		&:before 
+			background-image: url(/img/li-style.svg)
+			background-repeat: no-repeat
+			content: ''
+			width: 18px
+			height: 18px
+			position: absolute
+			background-size: contain
+			left: -24px
+			margin-top: 3px
+
+				
+
 	
 
 @import "media" // Always at the end
