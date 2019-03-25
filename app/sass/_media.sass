@@ -5,7 +5,13 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
-
+	.topmenu li a
+			padding: 5px 15px
+			
+	.header-content 
+		.header-img-wraper
+			img
+				max-width: 400px 
 // ≥992px
 +media-breakpoint-down(md)
 	.header-content 
@@ -17,9 +23,13 @@
 			display: none
 		.image-wraper-sect-1
 			bottom: 0
+	.header-content
+		padding-top: 50px
 
 // ≥768px
 +media-breakpoint-down(sm)
+	.line
+		display: none
 
 // ≥576px
 +media-breakpoint-down(xs)
