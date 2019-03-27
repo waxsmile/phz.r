@@ -3,17 +3,24 @@ $(function() {
 
 
 $("#my-menu").mmenu({
+	extensions : [ 'widescreen', 'theme-white', 'effect-menu-slide', 'pagedim-black' ],
 	navbar:{
 		title: "Меню"
-	}
+	},
 });
 
-// $(".toggle-mnu").click(function() {
+	var api = $("#my-menu").data("mmenu");
+	api.bind("closed", function () {
+		$(".toggle-mnu").removeClass("on");
+	});
 
-// 	$(this).toggleClass("on");
-// 	$(".main-mnu").slideToggle();
-// 	return false;
-// });
+$(".toggle-mnu").click(function() {
+	var mmAPI = $("#my-menu").data( "mmenu" );
+	mmAPI.open();
+	$(this).toggleClass("on");
+	$(".main-mnu").slideToggle();
+	return false;
+});
 
 
 
@@ -21,16 +28,11 @@ $("#my-menu").mmenu({
 });
 
 var toggle = document.querySelector('.toggle-mnu')
-var mnu = document.querySelector('.d-md-none')
-var topMenu = document.querySelector('nav')
 console.log(toggle);
 
 toggle.onclick = function(){
 	console.log('work')
 	toggle.classList.toggle("on");
-	toggle.classList.toggle("abs");
-	mnu.classList.toggle("block");
-	topMenu.classList.add("mobile");
 	return false;
 
 }

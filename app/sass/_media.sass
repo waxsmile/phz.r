@@ -9,11 +9,57 @@
 			padding: 5px 15px
 			
 	.header-content 
+		.header-text-wraper
+			left: 0
+			
+	.header-content 
 		.header-img-wraper
+			&:before
+				height: 400px
+				width: 400px
 			img
 				max-width: 400px 
+				height: 400px
+				
+	.sect-3 
+		.frst-rect
+			&:after
+				width: 120px
+				left: 30px
+			&:before
+				width: 120px
+				left: -150px
+			h4
+				left: -130px
+				font-size: 16px
+		.second-rect
+			&:after
+				width: 120px
+			&:before
+				width: 120px
+				left: -150px
+
+	.list-style-dev li:before
+		left: -18px
+		
+
+	.contacts .form-wraper form h4
+		font-size: 16px
+	.contacts .form-wraper form h3
+		font-size: 20px
+	.contacts .form-wraper form .check-field
+		margin-top: 12px
+	.contacts .form-wraper form .check-field .text-check
+		font-size: 14px
+
 // ≥992px
 +media-breakpoint-down(md)
+	
+	h2
+		font-size: 24px
+
+	.main-header
+		min-height: 1000px
 	.header-content 
 		.header-text-wraper
 			left: 0
@@ -25,14 +71,144 @@
 			bottom: 0
 	.header-content
 		padding-top: 50px
+	
+	.header-content .header-img-wraper
+		text-align: center
+		
+	.header-content .header-text-wraper
+		padding: 20px 20px
+		
+	.header-content 
+		.header-img-wraper 
+			&:before
+				display: none
+			img
+				width: 100%
+				height: auto
+				max-width: inherit
+				
+	.header-content .button-wraper
+		text-align: center
+		
+	.sect-1
+		padding-top: 60px
+		h2
+			font-size: 24px
+		p
+			font-size: 14px
+		
+	.sect-1 
+		.image-wraper-sect-1 
+			&:after
+				display: none
+			img
+				width: 100%
+				height: auto
+				
+	.sect-2 .sect-2-header h2:before
+		font-size: 60px
+		bottom: -5px
+		left: -26px
+		
+	.sect-2 .product-wraper
+		padding-top: 40px
+		
+
+	.cube-2, .cube-1, .cube-3
+		display: none
+		
+	.sect-3
+		padding-top: 100px
+		
+	.sect-3 .sect-3-header h2:before
+		font-size: 60px
+		bottom: -5px
+		left: -26px
+		
+	.sect-4
+		padding-top: 100px
+		
+	.sect-4 .sect-4-header h2:before
+		font-size: 60px
+		bottom: -5px
+		left: -26px
+
+	.contacts
+		padding-top: 60px
+		
+	.contacts 
+		.form-wraper 
+			form 
+				padding: 20px 30px 30px
+				h3
+					font-size: 18px
+				.input-form
+					margin: 10px 0
+					
+	.contacts .form-wraper form .check-field .text-check
+		font-size: 12px
+		
+	.footer-sect
+		font-size: 13px
 
 // ≥768px
 +media-breakpoint-down(sm)
+	.main-header
+		min-height: 800px
+	.header-content .header-text-wraper h1
+		font-size: 32px
 	.line
 		display: none
+	.sect-2 
+		.product-wraper 
+			.round 
+				background-position: 40px 0px
+				.product-href 
+					.product-item
+						margin: 0 auto
+						&:before
+							display: none
+
+	.sect-2 .sect-2-header h2:before
+		font-size: 50px
+		bottom: -5px
+		left: -10px
+		
+	.sect-3 .sect-3-header h2:before
+		font-size: 50px
+		bottom: -5px
+		left: -10px
+	.sect-3 .frst-rect
+		margin-top: 40px
+		
+	.sect-4 .sect-4-header h2:before
+		font-size: 50px
+		bottom: -5px
+		left: -10px
+	.sect-4
+		padding-top: 60px
+	
+	.footer-sect 
+		text-align: center
+		.footer-time-addres
+			padding-top: 15px
+		.phone-footer
+			padding-top: 15px
+			.footer-phone
+				text-align: center
 
 // ≥576px
 +media-breakpoint-down(xs)
+	.main-header .top-line
+		padding-top: 5px
+	
+	.logo-wraper
+		text-align: center	
+	.toggle-mnu
+		margin: 0 auto
+		
+	.main-header .top-line .header-phone-wraper
+		margin-top: -12px
 
 
 /*==========  Mobile First  ==========*/
