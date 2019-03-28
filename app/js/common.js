@@ -11,7 +11,7 @@ $("#my-menu").mmenu({
 
 	var api = $("#my-menu").data("mmenu");
 	api.bind("closed", function () {
-		$(".toggle-mnu").removeClass("on");
+		$(".toggle-mnu").classList.toggle("on");
 	});
 
 $(".toggle-mnu").click(function() {
@@ -36,5 +36,6 @@ toggle.onclick = function(){
 	return false;
 
 }
+
 
 
