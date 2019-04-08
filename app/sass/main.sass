@@ -62,7 +62,7 @@ body
 	width: 3px
 	background-color: rgba(206, 206, 206, 0.6)
 	z-index: 1
-	top: 1500px
+	top: 1800px
 	&:before
 		content: ''
 		position: absolute
@@ -281,14 +281,14 @@ b, strong
 .sect-1
 	padding-top: 120px
 	position: relative
-	&:before
-		content: '80 лет'
-		position: absolute
-		font-size: 570px
-		color: #F9F9F9
-		font-weight: 700 
-		bottom: 50px
-		z-index: -1 
+	// &:before
+	// 	content: '80 лет'
+	// 	position: absolute
+	// 	font-size: 570px
+	// 	color: #F9F9F9
+	// 	font-weight: 700 
+	// 	bottom: 50px
+	// 	z-index: -1 
 	.sect-1-text
 		.sect-header
 			h2
@@ -307,7 +307,7 @@ b, strong
 		text-align: center
 		position: relative
 		bottom: 170px
-		z-index: 2
+		z-index: 1
 		&:after
 			content: ''
 			background-image: url(/img/bg-zh.svg)
@@ -399,7 +399,7 @@ b, strong
 
 	
 .sect-3
-	padding-top: 200px
+	padding-top: 150px
 	padding-bottom: 50px
 	background-image: url(/img/bg-s-3-3.svg)
 	background-repeat: no-repeat
@@ -837,12 +837,12 @@ nav li:hover > .submenu
 	
 .content
 	min-height: 80vh
-	padding: 50px 0 90px
+	padding: 90px 0 150px
 	background-image: url(/img/bg-content.png)
 	background-position: center
 	background-repeat: no-repeat
 	h1
-		padding-bottom: 30px
+		padding-bottom: 60px
 		&:after
 			position: relative
 			content: ''
@@ -854,8 +854,168 @@ nav li:hover > .submenu
 			left: 80px
 			border-radius:  30px
 			transform: translate(-50%, 0)
+			
 
 
+
+.contacts-page
+	padding-top: 130px
+	.form-wraper
+		height: 100%
+		filter: drop-shadow(0 0 2px #bebebe)
+		background: #fff
+		border-radius: 0 5px 5px 0
+		margin-top: 50px
+		form
+			padding: 20px 65px 30px
+			h4
+				font-size: 20px
+			h3
+				font-size: 26px
+			.input-form
+				display: block
+				width: 100%
+				padding: 5px 15px
+				margin: 0 auto
+				margin-bottom: 5px 
+				border-left: none
+				border-right: none
+				border-top: none
+				margin: 20px 0
+			textarea
+				display: block
+				margin: 0 auto
+				margin-bottom: 5px
+				width: 100%
+				padding: 5px 15px
+				margin-top: 30px
+			.check-field
+				margin-top: 20px
+			.button-wraper-form
+				padding-top: 15px
+				text-align: left
+				.button
+					background: linear-gradient(to right, #3E49F5, #FE4797)
+					color: #FFF
+	.contacts-wraper
+		margin-left: 80px
+		h3
+			font-weight: 600
+			font-size: 24px
+			margin: 0
+			padding: 0
+			&:after
+				position: relative
+				content: ''
+				height: 2px
+				background: linear-gradient(101.78deg,#3B49F6 4%,#FE4797 100%)
+				width: 50px
+				display: block
+				bottom: 0px
+				left: 26px
+				border-radius:  30px
+				transform: translate(-50%, 0)
+		h4
+		 font-weight: 400 
+		 font-size: 18px
+		 
+
+
+.product
+	.categories-wraper
+		background-color: #fff
+		box-shadow: 0 15px 30px rgba(0,0,0,.15)
+		.categories-title
+			padding: 25px 30px
+			font-size: 16px
+			font-weight: 700
+			text-transform: uppercase
+			background-color: #fafafa
+		.categories-content
+			padding: 10px 30px 30px
+			.categories-list
+				margin: 0
+				padding: 0
+				list-style: none
+				li
+					position: relative
+					margin-bottom: 15px
+					a
+						position: relative
+						display: inline-block
+						padding-left: 10px
+						font-size: 16px
+						color: #333
+						text-decoration: none
+						&:hover
+							color: #000f96
+							font-weight: 600 
+	.product-wraper
+		.product-img
+			width: 100%
+			height: auto
+		.product-descr
+			position: relative
+			display: flex
+			justify-content: space-between
+			margin-bottom: 5px
+			font-size: 16px
+			z-index: 1
+			&:after
+				content: ''
+				position: absolute
+				bottom: 7px
+				left: 0
+				right: 0
+				border-bottom: 2px dotted #999
+				z-index: -1
+			span,b
+				background-color: #FFF
+	.product-price
+		display: inline-block
+		margin-bottom: 25px
+		margin-top: 10px
+		font-size: 20px
+		font-weight: 700
+	.product-price-descr
+		display: inline-block
+		font-size: 16px
+		font-weight: 500
+	.product-table-price
+		margin-top: 20px
+		margin-bottom: 20px
+		box-shadow: 0 15px 30px rgba(0,0,0,.15)
+		.table-head
+			margin: 0
+			padding: 15px
+			font-size: 16px
+			text-align: center
+			color: #fff
+			text-transform: uppercase
+			background-color: #000f96
+		.table-wrap
+			overflow-x: auto
+			table
+				width: 100%
+				font-weight: 400
+				background-color: #fff
+				tr
+					border-bottom: 1px solid #d7d9ef
+					&:nth-child(2n)
+						background-color: #d7d9ef
+					td
+						white-space: nowrap
+						padding: 10px
+						border-right: 1px solid #e5e5e5
+						border-left: 1px solid #e5e5e5
+						vertical-align: middle
+				h4
+					font-size: 14px
+					color: #000F96
+					margin: 0
+					
+
+		 
 
 .line-content-1
 .line-content-2
